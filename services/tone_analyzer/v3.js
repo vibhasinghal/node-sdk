@@ -62,6 +62,7 @@ function ToneAnalyzer(options) {
  *
  */
 ToneAnalyzer.prototype.tone = function(params, callback) {
+  console.log("tone analyzer called.");	
   if (!params || !params.text){
     callback(new Error('Missing required parameters: text'));
     return;

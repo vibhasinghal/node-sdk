@@ -49,6 +49,8 @@ function Conversation(options) {
  * @param  {Object}   params   { workspace_id: '',  }
  */
 Conversation.prototype.message = function(params, callback) {
+	
+  console.log("conversation message function called.");
   params = params || {};
 
   var parameters = {
